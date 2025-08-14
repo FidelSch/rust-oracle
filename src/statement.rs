@@ -107,7 +107,7 @@ impl<'conn, 'sql> StatementBuilder<'conn, 'sql> {
     /// more memory. The preferable value depends on the query and
     /// the environment.
     ///
-    /// If the query returns only onw row, it is better to change
+    /// If the query returns only one row, it is better to change
     /// size to one.
     ///
     /// ```
@@ -714,7 +714,7 @@ impl Statement {
     }
 
     /// Binds values by position and executes the statement.
-    /// It will retunrs `Err` when the statemnet is a select statement.
+    /// It will return `Err` when the statement is a select statement.
     ///
     /// See also [`Connection::execute`].
     ///
@@ -744,7 +744,7 @@ impl Statement {
     }
 
     /// Binds values by name and executes the statement.
-    /// It will retunrs `Err` when the statemnet is a select statement.
+    /// It will return `Err` when the statement is a select statement.
     ///
     /// See also [`Connection::execute_named`].
     ///
